@@ -1,0 +1,8 @@
+footer {
+	background: $wireframe-1;
+	@include break;
+}
+
+.footer-inner {
+	padding: 1em 0;
+}

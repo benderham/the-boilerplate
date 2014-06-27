@@ -1,0 +1,17 @@
+%clearfix {
+	display: inline-block;
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+img {
+	max-width: 100%;
+	display: block;
+}
+
+body {
+	background: $wireframe-1;;
+}

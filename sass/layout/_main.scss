@@ -1,0 +1,6 @@
+main.full-width {
+	@include span(12 of 12);
+	text-align: center;
+	padding-bottom: 1em;
+	background: $white;
+}

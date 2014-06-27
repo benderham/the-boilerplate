@@ -1,0 +1,12 @@
+.button {
+	display: inline-block;
+	padding: 10px;
+	background: $wireframe-4;
+	text-align: center;
+	text-decoration: none;
+	
+	&:hover {
+		background: $wireframe-2;
+	}
+}
+
