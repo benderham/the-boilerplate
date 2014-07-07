@@ -1,23 +1,11 @@
 /**
- * Media Query Breakpoints: http://breakpoint-sass.com
+ * Media Query Breakpoints
  */
-$breakpoint-to-ems: true;
-
-$tablet: max-width 767px;
-$portrait-tablet: 768px 979px;
-$desktop: min-width 980px;
-$large-desktop: min-width 1200px;
-
-$retina: min-resolution 1.5dppx;
+$hi-res: min-resolution 1.5dppx;
+$medium: min-width 767px;
 
 /**
  * Colours
  */
 $white: #ffffff;
 $black: #000000; 
- 
-$wireframe-1: #808080;
-$wireframe-2: #999999;
-$wireframe-3: #b4b1b1;
-$wireframe-4: #cecaca;
-$wireframe-5: #e7e4e4;

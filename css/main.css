@@ -5,6 +5,12 @@
  * Tools
  */
 /**
+ * Sass Maps
+ */
+/**
+ * Susy Grid - http://susydocs.oddbird.net/en/latest/settings/#global-defaults
+ */
+/**
  * Media Query Breakpoints: http://breakpoint-sass.com
  */
 /**
@@ -21,7 +27,13 @@ img {
 
 /* line 15, ../sass/base/_base.scss */
 body {
-  background: gray;
+  background: #e7e4e4;
+  color: gray;
+}
+
+/* line 20, ../sass/base/_base.scss */
+a {
+  color: #2980b9;
 }
 
 /* normalize.css v2.1.2 | MIT License | git.io/normalize */
@@ -596,45 +608,50 @@ table {
 /**
  * Layout
  */
-/* line 4, ../sass/layout/_header.scss */
-.header-inner {
-  max-width: 100%;
+/* line 1, ../sass/layout/_main.scss */
+.container {
+  max-width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
 /* line 12, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-2.1.2/sass/susy/output/support/_clearfix.scss */
-.header-inner:after {
+.container:after {
   content: " ";
   display: block;
   clear: both;
 }
 
-/* line 8, ../sass/layout/_header.scss */
-.logo {
-  width: 32.20339%;
+/* line 5, ../sass/layout/_main.scss */
+main {
+  width: 65%;
   float: left;
-  margin-right: 1.69492%;
-  background: #b4b1b1;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  background: #cecaca;
 }
 
-/* line 13, ../sass/layout/_header.scss */
-nav {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  background: #b4b1b1;
+/* line 10, ../sass/layout/_main.scss */
+aside {
+  width: 31.66667%;
+  float: right;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
+  background: #cecaca;
 }
-
-/* line 1, ../sass/layout/_main.scss */
-main.full-width {
-  width: 100%;
-  float: left;
-  margin-left: 0;
-  margin-right: 0;
-  text-align: center;
-  padding-bottom: 1em;
-  background: white;
+/* line 14, ../sass/layout/_main.scss */
+aside ul {
+  padding: 0;
+}
+/* line 17, ../sass/layout/_main.scss */
+aside ul li {
+  list-style: none;
+  margin: 0;
+}
+/* line 21, ../sass/layout/_main.scss */
+aside ul li a {
+  display: block;
+  padding: 10px 5%;
+  border-bottom: solid 1px gray;
 }
 
 /* line 1, ../sass/layout/_footer.scss */
@@ -653,10 +670,10 @@ footer {
  */
 /* line 1, ../sass/modules/_slideshow.scss */
 .slideshow {
-  width: 100%;
+  width: 98.33333%;
   float: left;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: 0.83333%;
+  margin-right: 0.83333%;
 }
 
 /* line 1, ../sass/modules/_buttons.scss */

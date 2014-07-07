@@ -1,16 +1,2 @@
 header {
 }
-
-.header-inner {
-	@include container(100%);
-}
-
-.logo {
-	@include span(4 of 12);
-	background: $wireframe-3;
-}
-
-nav {
-	@include span (12 of 12);
-	background: $wireframe-3;
-}
