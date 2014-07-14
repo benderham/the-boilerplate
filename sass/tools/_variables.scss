@@ -1,7 +1,7 @@
 /**
  * Media Query Breakpoints
+ * Note: for high resolution/retina display, use mixin @hi-res
  */
-$hi-res: min-resolution 1.5dppx;
 $medium: min-width 767px;
 
 /**
