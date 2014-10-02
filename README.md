@@ -1,10 +1,12 @@
-## Gotham Blueprint
+## The Boilerplate
 
-At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
+So, you need a starting point that doesn't require you to spend an eternity deleting the crap you don't need? Well this is it, a simple SASS structure built on Bourbon and Neat (oh and a few cool mixins), a single HTML file and a place to work your JS wizardry.
+
+This is designed to run on Codekit, download, drag and drop, Go!
 
 ## Installation
 
-Provide code examples and explanations of how to get the project.
+Download the latest build, drag and drop the folder into Codekit, Go!
 
 ## Included Awesomeness
 [Modernizr](http://modernizr.com)
@@ -25,8 +27,4 @@ Provide code examples and explanations of how to get the project.
 ## Contribute
 
 Please feel free to contribute to this project, just fork it and go nuts!
-Any bugs, issues, questions, suggestions, praise (sorry complaints department closed permanently), ben@benderham.com
-
-## License
-
-A short snippet describing the license (MIT, Apache, etc.)
+Any bugs, issues, questions, suggestions, praise (sorry complaints department closed permanently), [Email Me!](mailto:ben@benderham.com)
