@@ -14,32 +14,32 @@ http://benoitburgener.ch/blog/organize-your-css-declarations/
 ````css
 .example-css-declaration {
 	// The box
-  display: block;
-  width: 100px;
-  height: 100px;
-  margin: 10px;
-  padding: 10px;
-
-  // Positioning
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-
-  // Typeface
-  font-family: 'Helvetica', sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: white;
-
-  // Styling
-  background-color: red;
-  border: 1px solid blue;
-  border-radius: 3px;
-  cursor: pointer;
-
-  // All other properties
-  pointer-events: none;
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 10px;
+	
+	// Positioning
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	
+	// Typeface
+	font-family: 'Helvetica', sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: white;
+	
+	// Styling
+	background-color: red;
+	border: 1px solid blue;
+	border-radius: 3px;
+	cursor: pointer;
+	
+	// All other properties
+	pointer-events: none;
 }
 ````
 
