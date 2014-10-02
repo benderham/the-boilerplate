@@ -1,4 +1,4 @@
-## Synopsis
+## Gotham Blueprint
 
 At the top of the file there should be a short introduction and/ or overview that explains **what** the project is. This description should match descriptions added for package managers (Gemspec, package.json, etc.)
 
@@ -8,7 +8,7 @@ Provide code examples and explanations of how to get the project.
 
 ## Code Standards
 
-Organising CSS Declarations 
+**Organising CSS Declarations**\n
 http://benoitburgener.ch/blog/organize-your-css-declarations/
 
 ````css
@@ -43,9 +43,10 @@ http://benoitburgener.ch/blog/organize-your-css-declarations/
 }
 ````
 
-## Contributors
+## Contribute
 
-Let people know how they can dive into the project, include important links to things like issue trackers, irc, twitter accounts if applicable.
+Please feel free to contribute to this project, just fork it and go nuts!
+Any bugs, issues, questions, suggestions, praise (sorry complaints department closed permanently), ben@benderham.com
 
 ## License
 
