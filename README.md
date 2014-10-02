@@ -9,6 +9,8 @@ This is designed to run on Codekit, download, drag and drop, Go!
 Download the latest build, drag and drop the folder into Codekit, Go!
 
 ## Included Awesomeness
+[jQuery](http://jquery.com)
+
 [Modernizr](http://modernizr.com)
 
 [Bourbon](http://bourbon.io/docs/)
