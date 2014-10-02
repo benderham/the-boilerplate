@@ -1,17 +1,4 @@
-%clearfix {
-	display: inline-block;
-  &:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+body,
+html {
+	height: 100%;
 }
-
-img {
-	
-}
-
-body {
-	
-}
-

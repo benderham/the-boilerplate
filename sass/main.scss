@@ -1,7 +1,9 @@
 /**
  * Vendor
  */
+// http://bourbon.io/docs/
 @import 'bourbon';
+// http://thoughtbot.github.io/neat-docs/latest/
 @import 'neat';
 
 /**
@@ -21,7 +23,6 @@
  * Layout
  */
 @import 'layout/header';
-@import 'layout/main';
 @import 'layout/footer';
 
 /** 
