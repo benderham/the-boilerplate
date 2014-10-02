@@ -8,7 +8,8 @@ Provide code examples and explanations of how to get the project.
 
 ## Code Standards
 
-**Organising CSS Declarations**\n
+**Organising CSS Declarations**
+
 http://benoitburgener.ch/blog/organize-your-css-declarations/
 
 ````css
