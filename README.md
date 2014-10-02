@@ -8,13 +8,18 @@ Provide code examples and explanations of how to get the project.
 
 ## Included Awesomeness
 [Modernizr](http://modernizr.com)
+
 [Bourbon](http://bourbon.io/docs/)
+
 [Bourbon Neat](http://thoughtbot.github.io/neat-docs/latest/)
 
 ## Coding Standards
 [HTML5](http://html5doctor.com/element-index/)
+
 [SASS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
+
 [SMACSS - Scalable and Modular Architecture for CSS](https://smacss.com/) - SASS structure in this project is 'loosely' based on SMACSS.
+
 [Organising CSS Declarations](http://benoitburgener.ch/blog/organize-your-css-declarations/)
 
 ## Contribute
