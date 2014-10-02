@@ -6,43 +6,16 @@ At the top of the file there should be a short introduction and/ or overview tha
 
 Provide code examples and explanations of how to get the project.
 
-## Code Standards
+## Included Awesomeness
+[Modernizr](http://modernizr.com)
+[Bourbon](http://bourbon.io/docs/)
+[Bourbon Neat](http://thoughtbot.github.io/neat-docs/latest/)
 
-**Organising CSS Declarations**
-
-http://benoitburgener.ch/blog/organize-your-css-declarations/
-
-````css
-.example-css-declaration {
-	// The box
-	display: block;
-	width: 100px;
-	height: 100px;
-	margin: 10px;
-	padding: 10px;
-	
-	// Positioning
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1;
-	
-	// Typeface
-	font-family: 'Helvetica', sans-serif;
-	font-size: 1.2em;
-	font-weight: bold;
-	color: white;
-	
-	// Styling
-	background-color: red;
-	border: 1px solid blue;
-	border-radius: 3px;
-	cursor: pointer;
-	
-	// All other properties
-	pointer-events: none;
-}
-````
+## Coding Standards
+[HTML5](http://html5doctor.com/element-index/)
+[SASS](http://sass-lang.com/documentation/file.SASS_REFERENCE.html)
+[SMACSS - Scalable and Modular Architecture for CSS](https://smacss.com/) - SASS structure in this project is 'loosely' based on SMACSS.
+[Organising CSS Declarations](http://benoitburgener.ch/blog/organize-your-css-declarations/)
 
 ## Contribute
 
