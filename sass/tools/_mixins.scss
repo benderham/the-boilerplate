@@ -9,10 +9,10 @@
 }
 
 @mixin reset-list {
+	padding: 0;
+  margin: 0;
   list-style: none;
   list-style-image: none;
-  padding: 0;
-  margin: 0;
 }
 
 @mixin transition {
