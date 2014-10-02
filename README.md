@@ -11,7 +11,7 @@ Provide code examples and explanations of how to get the project.
 Organising CSS Declarations 
 http://benoitburgener.ch/blog/organize-your-css-declarations/
 
-''''css
+````css
 .example-css-declaration {
 	// The box
   display: block;
@@ -41,7 +41,7 @@ http://benoitburgener.ch/blog/organize-your-css-declarations/
   // All other properties
   pointer-events: none;
 }
-''''
+````
 
 ## Contributors
 
