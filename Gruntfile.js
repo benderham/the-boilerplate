@@ -34,6 +34,25 @@ module.exports = function(grunt) {
 	    }
     },
     
+    autoprefixer: {
+      dist: {
+        files: {
+            'app/build/css/main.css': 'app/build/css/main.css'
+        }
+      }
+  	},
+  	
+  	imagemin: {
+			dynamic: {
+			  files: [{
+			      expand: true,
+			      cwd: 'app/src/img/',
+			      src: ['**/*.{png,jpg,gif}'],
+			      dest: 'app/build/img/'
+			  }]
+			}
+		},
+    
     watch: {
 	    scripts: {
 		    files: ['app/src/js/*.js'],
@@ -44,8 +63,15 @@ module.exports = function(grunt) {
 		  },
 		  css: {
 			  files: ['app/src/sass/*.scss'],
-		    tasks: ['sass'],
+		    tasks: ['sass', 'autoprefixer'],
 		    options: {
+		      spawn: false,
+		    }
+		  },
+		  images: {
+			  files: ['app/src/img/*.{png,jpg,gif}'],
+			  tasks: ['newer:imagemin:dynamic'],
+			  options: {
 		      spawn: false,
 		    }
 		  }
@@ -53,11 +79,8 @@ module.exports = function(grunt) {
 	
 	});
 	
-	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-contrib-uglify');
-	grunt.loadNpmTasks('grunt-contrib-sass');
-	grunt.loadNpmTasks('grunt-contrib-watch');
+	require('load-grunt-tasks')(grunt);
 	
-	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'imagemin', 'watch']);
 
 };
