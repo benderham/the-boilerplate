@@ -37,7 +37,7 @@ module.exports = function(grunt) {
     autoprefixer: {
       dist: {
         files: {
-            'app/build/css/main.css': 'app/build/css/main.css'
+          'app/build/css/main.css': 'app/build/css/main.css'
         }
       }
   	},
@@ -61,11 +61,12 @@ module.exports = function(grunt) {
 			    spawn: false,
 		    },
 		  },
-		  css: {
-			  files: ['app/src/sass/*.scss'],
+		  styles: {
+			  files: ['app/src/sass/**/*.scss'],
 		    tasks: ['sass', 'autoprefixer'],
 		    options: {
 		      spawn: false,
+		      livereload: true
 		    }
 		  },
 		  images: {
@@ -81,6 +82,6 @@ module.exports = function(grunt) {
 	
 	require('load-grunt-tasks')(grunt);
 	
-	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'imagemin', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'newer:imagemin', 'watch']);
 
 };
