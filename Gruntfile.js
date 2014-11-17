@@ -20,7 +20,7 @@ module.exports = function(grunt) {
 	    }
     },
     
-    sass: {
+    scss: {
 	    dist: {
 		    options: {
 			    style: 'compressed',
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
 			    loadPath: require('node-neat').includePaths
 		    },
 		    files: {
-			    'app/build/css/main.css': 'app/src/sass/main.scss'
+			    'app/build/css/main.css': 'app/src/scss/main.scss'
 		    }
 	    }
     },
@@ -62,8 +62,8 @@ module.exports = function(grunt) {
 		    },
 		  },
 		  styles: {
-			  files: ['app/src/sass/**/*.scss'],
-		    tasks: ['sass', 'autoprefixer'],
+			  files: ['app/src/scss/**/*.scss'],
+		    tasks: ['scss', 'autoprefixer'],
 		    options: {
 		      spawn: false,
 		      livereload: true
@@ -82,6 +82,6 @@ module.exports = function(grunt) {
 	
 	require('load-grunt-tasks')(grunt);
 	
-	grunt.registerTask('default', ['concat', 'uglify', 'sass', 'autoprefixer', 'newer:imagemin', 'watch']);
+	grunt.registerTask('default', ['concat', 'uglify', 'scss', 'autoprefixer', 'newer:imagemin', 'watch']);
 
 };
