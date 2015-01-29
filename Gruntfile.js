@@ -14,12 +14,7 @@ module.exports = function(grunt) {
     //pkg: grunt.file.readJSON('package.json'),
     
     // Creepy perve on the files and watch them changing... giggedy!
-    watch: {      
-      // Watch for any changes on the Gruntfile
-      gruntfile: {
-        files: 'Gruntfile.js',
-        tasks: ['jshint:gruntfile']
-      },
+    watch: {
       // Watch for changes in rootImages
       favicons: {
         files: ['<%= globalConfig.src %>/favicons/**/*.{jpg,jpeg,png,gif,svg}'],
@@ -149,6 +144,8 @@ module.exports = function(grunt) {
 	    },
 	    vendorScripts: {
 	      src: [
+  	      'bower_components/jquery/dist/jquery.js',
+  	      'bower_components/modernizr/modernizr.js',
 	      	'<%= globalConfig.src  %>/js/vendor/vendor.js'
 	      ],
 	      dest: '<%= globalConfig.build %>/js/vendor.js',
@@ -158,7 +155,6 @@ module.exports = function(grunt) {
 		
 		// Javascript linting using jshint
 		jshint: {
-			gruntfile: 'Gruntfile.js',
 			mainScript: '<%= globalConfig.src  %>/js/main.js'
 		}, 
 		// end linting
