@@ -213,7 +213,7 @@ module.exports = function(grunt) {
 					src: ['<%= globalConfig.build %>/css/main.css', '<%= globalConfig.build %>/js/*.js','<%= globalConfig.build %>/images/**/*.{jpg,jpeg,png,gif,svg}']
 				},
 				options: {
-					proxy: "dev.yoururl",
+					proxy: "dev.boilerplate",
 					watchTask: true
 				}
 			}
