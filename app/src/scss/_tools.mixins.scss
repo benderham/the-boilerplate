@@ -21,11 +21,11 @@
 
 @mixin hide-text($height: null) {
   overflow: hidden;
-  text-indent: 130%;
+  text-indent: 150%;
   white-space: nowrap;
 
   @if $height {
-    @warn "The `hide-text` mixin has changed and no longer requires a height.";
+    @warn "The 'hide-text' mixin has changed and no longer requires a height.";
   }
 }
 

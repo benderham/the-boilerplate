@@ -89,7 +89,8 @@ module.exports = function(grunt) {
 		sass: {
 			develop: {
 				options: {
-					style: 'expanded'
+					style: 'expanded',
+          sourcemap: 'none'
 				},
 				files: {
 					'<%= globalConfig.build %>/css/main.css': '<%= globalConfig.src  %>/scss/main.scss'
@@ -115,8 +116,8 @@ module.exports = function(grunt) {
 		// Combine all of our media queries
 		cmq: {
 			mainCSS: {
-	        expand: true,
-	        src: '<%= globalConfig.build %>/css/*.css'
+        expand: true,
+        src: '<%= globalConfig.build %>/css/*.css'
 	    }
 		}, // end combining media queries
 		
@@ -190,15 +191,15 @@ module.exports = function(grunt) {
 		jade: {
       compile: {
         options: {
-            pretty: true
+          pretty: true
         },
         files: [{
-            expand: true,
-            cwd: '<%= globalConfig.src %>/jade/',
-            src: ['*.jade'],
-            dest: '<%= globalConfig.build %>/',
-            ext: '.html',
-            extDot: 'first'
+          expand: true,
+          cwd: '<%= globalConfig.src %>/jade/',
+          src: ['*.jade'],
+          dest: '<%= globalConfig.build %>/',
+          ext: '.html',
+          extDot: 'first'
         }]
       }
     },
@@ -214,8 +215,7 @@ module.exports = function(grunt) {
 					//proxy: "dev.boilerplate",
           server: {
             baseDir: "./<%= globalConfig.build %>/"
-          },
-					
+          }					
 				}
 			}
 		},
