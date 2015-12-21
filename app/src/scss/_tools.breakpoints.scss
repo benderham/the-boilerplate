@@ -1,0 +1,27 @@
+/**
+ * Breakpoints/ Media Queries
+ */
+@mixin bp-medium {
+  @media only screen and (min-width: 43em) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media only screen and (min-width: 63em) {
+    @content;
+  }
+}
+
+@mixin bp-larger {
+  @media only screen and (min-width: 80em) {
+    @content;
+  }
+}
+
+@mixin hi-res {
+  // This is the very long but bulletproof media query for high resolution displays.
+  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+    @content;
+  }
+}
