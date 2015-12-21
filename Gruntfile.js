@@ -11,9 +11,9 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     globalConfig: globalConfig,
-    //pkg: grunt.file.readJSON('package.json'),
+    pkg: grunt.file.readJSON('package.json'),
     
-    // Creepy perve on the files and watch them changing... giggedy!
+    // Watch for file changes
     watch: {
       // Watch for changes in rootImages
       favicons: {
@@ -46,7 +46,7 @@ module.exports = function(grunt) {
         tasks: ['jade']
       }   
     }, 
-    // end watching you filthy perve
+    // end watch
     
     // Let's do some copying!
     copy: {
@@ -120,7 +120,7 @@ module.exports = function(grunt) {
 	    }
 		}, // end combining media queries
 		
-		// Send our CSS to Jenny Craig
+		// Compress CSS
 		cssmin: {
 		  target: {
 		    files: [{
@@ -131,8 +131,7 @@ module.exports = function(grunt) {
 		      ext: '.css'
 		    }]
 		  }
-		},
-		// enough weight lost
+		}, // end CSS minification
 		
 		// Javascript Development
 		// Concat vendor/bower scripts
@@ -187,7 +186,7 @@ module.exports = function(grunt) {
 		},
 		// end imagemin
 		
-		// Jade is sexy!
+		// Jade
 		jade: {
       compile: {
         options: {
@@ -204,15 +203,19 @@ module.exports = function(grunt) {
       }
     },
 		
-		// preview changes live with browserSync!
+		// preview changes live with browserSync
 		browserSync: {
 			dev: {
 				bsFiles: {
-					src: ['<%= globalConfig.build %>/css/main.css', '<%= globalConfig.build %>/js/*.js','<%= globalConfig.build %>/images/**/*.{jpg,jpeg,png,gif,svg}']
+					src: ['<%= globalConfig.build %>/*.html', '<%= globalConfig.build %>/css/main.css', '<%= globalConfig.build %>/js/*.js','<%= globalConfig.build %>/images/**/*.{jpg,jpeg,png,gif,svg}']
 				},
 				options: {
-					proxy: "dev.boilerplate",
-					watchTask: true
+          watchTask: true,
+					//proxy: "dev.boilerplate",
+          server: {
+            baseDir: "./<%= globalConfig.build %>/"
+          },
+					
 				}
 			}
 		},
