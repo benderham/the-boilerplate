@@ -1,4 +1,4 @@
-app/build/
+_bin/
 
 node_modules/
 bower_components/
