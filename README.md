@@ -26,6 +26,9 @@ Once this is installed, check for updates to required NPM packages.
 
 ```$ ncu```
 
+### Update Project Details
+Update project name in `package.json` and `bower.json`
+
 ### NPM Install
 ```$ npm install```
 
