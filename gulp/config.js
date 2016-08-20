@@ -45,7 +45,10 @@ module.exports = {
 
   modernizr: {
     src:  src + '/js/**/*.js',
-    dest: build + '/js/'
+    dest: build + '/js/',
+    options: [
+     'setClasses'
+    ]
   },
 
   image: {
