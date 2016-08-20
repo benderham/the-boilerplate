@@ -44,13 +44,16 @@ module.exports = {
   },
 
   modernizr: {
-    src:  src + '/js/**/*.js',
+    src:  [
+      src + '/js/**/*.js',
+      src + '/scss/**/*.scss'
+    ],
     dest: build + '/js/',
     options: [
-     'setClasses'
+       'setClasses'
     ]
   },
-
+  
   image: {
     src: src + '/images/**/*.{jpg,png,gif,svg}',
     dest: build + '/images/'
