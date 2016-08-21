@@ -50,10 +50,17 @@ module.exports = {
     ],
     dest: build + '/js/',
     options: [
-       'setClasses'
+      'setClasses',
+      'addTest',
+      'html5printshiv',
+      'testProp',
+      'fnBind'
+    ],
+    tests: [
+      'flexbox'
     ]
   },
-  
+
   image: {
     src: src + '/images/**/*.{jpg,png,gif,svg}',
     dest: build + '/images/'

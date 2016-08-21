@@ -6,7 +6,8 @@ gulp.task('modernizr', function() {
   gulp.src(config.src)
     .pipe(modernizr(
       {
-        options: config.options
+        options: config.options,
+        tests: config.tests
       }
     ))
     .pipe(gulp.dest(config.dest))
