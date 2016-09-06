@@ -10,5 +10,5 @@ gulp.task('modernizr', function() {
         tests: config.tests
       }
     ))
-    .pipe(gulp.dest(config.dest))
+    .pipe(gulp.dest(config.dest));
 });

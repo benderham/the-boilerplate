@@ -1,40 +1,49 @@
-## The Boilerplate
-**FOR NOW THIS README IS NOT UP TO DATE!!**
-* Include Media
-* Modernizr (default build)
-* ES6
-* Pug
-* SCSS (ITCSS)
+# The _New_ Boilerplate
+## A simple, easy-to-use boilerplate task-runner for static-websites.
+
+* _Gulp_
+* _Bower_
+* _ES6_
+* _SCSS (ITCSS)_
+* _BrowserSync_
+* _Include Media_
+* _Modernizr_
 
 ## Getting Started
 
-### Download or Clone Copy of Repository
+### Clone the Repo.
 
-### Install Gulp & Bower Globally
-```$ npm install -g gulp-cli```
+```git clone https://github.com/vSanjo/the-boilerplate.git```
 
-```$ npm install -g bower```
+### Install _Gulp_ & _Bower_ Globally
 
-If you have previously installed a version of gulp globally, please run `npm rm --global gulp` to make sure your old version doesn't collide with gulp-cli.
+```$ npm install -g gulp-cli bower```
 
-### Check for NPM Updates
+If you have previously installed a version of _Gulp_ globally, please run
+`npm rm --global gulp` to make sure your old version doesn't collide with _gulp-cli_.
+
+### Check for _npm_ Updates
 Requires `npm-check-updates` to be installed globally.
 
 ```$ npm install -g npm-check-updates```
 
-Once this is installed, check for updates to required NPM packages.
+Once this is installed, check for updates to required _npm_ packages.
 
 ```$ ncu```
 
 ### Update Project Details
-Update project name in `package.json` and `bower.json`
+Update project name and version in `package.json` and `bower.json`
 
-### NPM Install
+### _npm_ Install
 ```$ npm install```
 
-### Bower Install
+### _Bower_ Install
 ```$ bower install```
+
+## Usage
+
+``` Coming Soon ```
 
 ## Contribute
 Please feel free to contribute to this project, just fork it and go nuts!
-Any bugs, issues, questions, suggestions, praise (sorry complaints department closed permanently), [Email Me!](mailto:ben@benderham.com)
+Any bugs, issues, questions, suggestions, praise, [email](mailto:hello+github@davidwoodward.me) me!

@@ -1,47 +1,21 @@
-// Settings
-// - Globally available settings
-// - Config switches
-// - Brand colours, etc
-@import 'settings.global';
+/* Settings */
+@import '_1.settings';
 
-// Tools
-// - Globally available tools
-// - Public mixins
-// - Helper functions
-@import '../../bower_components/include-media/dist/_include-media.scss'; // -- http://include-media.com/
-@import 'tools.mixins';
-@import 'tools.placeholders';
+/* Tools */
+@import '../../bower_components/include-media/dist/_include-media.scss';
+@import '_2.tools';
 
-// Generic
-// - Ground zero styles
-// - Low specificity, far reaching
-// - Resets, Normalize etc.
-@import 'generic.normalize';
+/* Generic */
+@import '_3.generic';
 
-// Base
-// - Unclassed HTML elements
-// - H1 - H6, basic links, lists etc
-// - Last layer you see type selectors
-@import 'base.page';
-@import 'base.type';
+/* Elements */
+@import '_4.elements';
 
-// Objects
-// - OOCSS
-// - Design Patterns
-// - No cosmetics
-// - Begin using classes exclusively
-// - Agnostically named e.g .ui-list
-@import 'objects.containers';
-@import 'objects.layout';
+/* Objects */
+@import '_5.objects';
 
-// Components
-// - Designed pieces of UI
-// - Still only using classes
-// - More explicity named e.g .products-list
-@import 'components.buttons';
+/* Components */
+@import '_6.components';
 
-// Trumps
-// - Overides, helpers, utilites
-// - Only affect one piece of the DOM at a time
-// - Usually carry !important
-@import 'trumps.helpers';
+/* Trumps */
+@import '_7.trumps';

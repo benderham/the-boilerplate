@@ -16,6 +16,6 @@ gulp.task('scss', function(){
     .pipe(scss())
     .pipe(autoprefixer(config.autoprefixer))
     .pipe(sourcemaps.init())
-    .pipe(sourcemaps.write('.'))   
-    .pipe(gulp.dest(config.scss.dest))
+    .pipe(sourcemaps.write('.'))
+    .pipe(gulp.dest(config.scss.dest));
 });
