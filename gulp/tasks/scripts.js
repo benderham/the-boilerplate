@@ -3,6 +3,7 @@ var plumber = require('gulp-plumber');
 var babel = require('gulp-babel');
 var config = require('../config');
 
+/* lint js, with es2015 linting */
 gulp.task('scripts', function() {
   return gulp.src(config.scripts.src)
     .pipe(plumber({

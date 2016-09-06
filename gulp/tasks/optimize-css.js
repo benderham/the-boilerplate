@@ -4,9 +4,7 @@ var size = require('gulp-size');
 var cmq = require('gulp-group-css-media-queries');
 var config = require('../config').optimize.css;
 
-/**
- * Copy and minimize CSS files
- */
+/* minify css */
 gulp.task('optimize:css', function() {
   return gulp.src(config.src)
     .pipe(cmq({

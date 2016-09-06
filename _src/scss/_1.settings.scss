@@ -54,3 +54,14 @@ table {
     border-spacing: 0;
 }
 /* End Reset */
+
+/* Start Custom Reset */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* End Custom Reset */

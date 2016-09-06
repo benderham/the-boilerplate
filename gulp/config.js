@@ -10,10 +10,10 @@ module.exports = {
       },
       port: 8080,
       files: [
-        build + '/css/*.css',
         build + '/*.html',
-        build + '/images/**',
-        build + '/js/**/*.js'
+        build + '/css/*.css',
+        build + '/js/**/*.js',
+        build + '/images/**'
       ]
     }
   },
@@ -78,10 +78,10 @@ module.exports = {
   },
 
   watch: {
+    html: src + '/html/**/*.html',
     sass: src + '/scss/**/*.{sass,scss}',
-    pug: src + '/pug/**/*.pug',
-    images:  src + '/images/**/*',
-    scripts: src + '/js/**/*'
+    scripts: src + '/js/**/*',
+    images:  src + '/images/**/*'
   },
 
   favicons: {

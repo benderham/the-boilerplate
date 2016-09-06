@@ -1,7 +1,5 @@
 # project specific
 _out/
-_bin/
-_build/
 
 # build tools
 node_modules/

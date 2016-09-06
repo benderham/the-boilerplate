@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var config = require('../config');
 
+/* preprocess scss, prefix, create sourcemaps */
 gulp.task('scss', function(){
   return gulp.src(config.scss.src)
     .pipe(plumber({
