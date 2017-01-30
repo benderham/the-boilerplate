@@ -5,5 +5,5 @@ var config = require('../config');
 gulp.task('svg', function() {
   return gulp.src(config.svg.src)
     .pipe(svgSprite(config.svg))
-    .pipe(gulp.dest(config.svg.dest))
+    .pipe(gulp.dest(config.svg.dest));
 });

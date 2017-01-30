@@ -1,8 +1,9 @@
 {
-  "name": "the-boilerplate",
-  "version": "0.1.0",
+  "name": "the-new-boilerplate",
+  "version": "1.0.2",
   "authors": [
-    "Ben Derham <ben@benderham.com>"
+    "Ben Derham <ben@benderham.com>",
+    "David Woodward <hello@davidwoodward.me>"
   ],
   "license": "MIT",
   "private": true,

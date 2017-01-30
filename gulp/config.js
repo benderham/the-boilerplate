@@ -1,5 +1,5 @@
-var src = 'src/';
-var build = '_bin/';
+var src = '_src/';
+var build = '_out/';
 
 module.exports = {
 
@@ -10,10 +10,10 @@ module.exports = {
       },
       port: 8080,
       files: [
-        build + '/css/*.css',
         build + '/*.html',
-        build + '/images/**',
-        build + '/js/**/*.js'
+        build + '/css/*.css',
+        build + '/js/**/*.js',
+        build + '/images/**'
       ]
     }
   },
@@ -23,14 +23,14 @@ module.exports = {
     dest: build + '/css/'
   },
 
+  html: {
+    src:  src + '/html/*.html',
+    dest: build
+  },
+
   scripts: {
     src:  src + '/js/**/*.js',
     dest: build + '/js/'
-  },
-
-  pug: {
-    src:  src + '/pug/**/*.pug',
-    dest: build
   },
 
   autoprefixer: {
@@ -78,10 +78,10 @@ module.exports = {
   },
 
   watch: {
+    html: src + '/html/**/*.html',
     sass: src + '/scss/**/*.{sass,scss}',
-    pug: src + '/pug/**/*.pug',
-    images:  src + '/images/**/*',
-    scripts: src + '/js/**/*'
+    scripts: src + '/js/**/*',
+    images:  src + '/images/**/*'
   },
 
   favicons: {
@@ -105,4 +105,4 @@ module.exports = {
     }
   }
 
-}
+};

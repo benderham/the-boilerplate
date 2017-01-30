@@ -1,33 +1,32 @@
 var gulp = require('gulp');
 var runSequence = require('run-sequence');
 
-/**
- * Run all tasks needed for a build in defined order
- */
+/* dev build process */
 gulp.task('build', function(cb) {
   runSequence(
     'svg',
     [
-      'modernizr',
-      'scss',
-      'pug',
-      'scripts',
       'images',
+      'modernizr',
+      'html',
+      'scss',
+      'scripts',
       'favicons'
     ],
     cb
   );
 });
 
+/* production-quality build process */
 gulp.task('build:production', function(callback) {
   runSequence(
     'svg',
     [
-      'modernizr',
-      'scss',
-      'pug',
-      'scripts',
       'images',
+      'modernizr',
+      'html',
+      'scss',
+      'scripts',
       'favicons'
     ],
     [

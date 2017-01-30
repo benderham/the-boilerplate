@@ -2,6 +2,7 @@ var gulp   = require('gulp');
 var modernizr = require('gulp-modernizr');
 var config = require('../config').modernizr;
 
+/* build modernizr based on contents */
 gulp.task('modernizr', function() {
   gulp.src(config.src)
     .pipe(modernizr(
@@ -10,5 +11,5 @@ gulp.task('modernizr', function() {
         tests: config.tests
       }
     ))
-    .pipe(gulp.dest(config.dest))
+    .pipe(gulp.dest(config.dest));
 });
