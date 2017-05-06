@@ -68,11 +68,15 @@ module.exports = {
 
   svg: {
     src: src + '/svg/*.svg',
-    dest: src + '/svg',
+    dest: src + '/pug/includes/',
+    svg: {
+      xmlDeclaration: false,
+      doctypeDeclaration: false
+    },
     mode: {
       symbol: {
         dest: '.',
-        sprite: 'svg-sprite.svg'
+        sprite: '_svg-sprite.svg'
       }
     }
   },
@@ -81,7 +85,8 @@ module.exports = {
     sass: src + '/scss/**/*.{sass,scss}',
     pug: src + '/pug/**/*.pug',
     images:  src + '/images/**/*',
-    scripts: src + '/js/**/*'
+    scripts: src + '/js/**/*',
+    svg: src + '/svg/**/*'
   },
 
   favicons: {
