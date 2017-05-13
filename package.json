@@ -2,6 +2,7 @@
   "name": "the-boilerplate",
   "version": "0.1.0",
   "devDependencies": {
+    "@material/layout-grid": "^0.1.1",
     "babel-preset-es2015": "^6.13.2",
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
