@@ -953,7 +953,7 @@ h1 {
     white-space: pre-wrap !important; }
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid #ccc;
     page-break-inside: avoid; }
   thead {
     display: table-header-group; }

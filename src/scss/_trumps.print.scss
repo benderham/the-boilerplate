@@ -12,7 +12,7 @@
   blockquote::first-line,
   li::first-line {
     background: transparent !important;
-    color: #000 !important; // Black prints faster
+    color: $black !important; // Black prints faster
     text-shadow: none !important;
     box-shadow: none !important;
   }
@@ -47,7 +47,7 @@
 
   pre,
   blockquote {
-    border: 1px solid #999;
+    border: 1px solid $grey;
     page-break-inside: avoid;
   }
 
