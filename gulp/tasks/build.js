@@ -13,7 +13,8 @@ gulp.task('build', function(cb) {
       'pug',
       'scripts',
       'images',
-      'favicons'
+      'favicons',
+      'root-files'
     ],
     cb
   );
@@ -28,7 +29,8 @@ gulp.task('build:production', function(callback) {
       'pug',
       'scripts',
       'images',
-      'favicons'
+      'favicons',
+      'root-files'
     ],
     [
       'optimize:css',

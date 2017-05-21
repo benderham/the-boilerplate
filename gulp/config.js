@@ -1,5 +1,5 @@
 var src = 'src/';
-var build = '_bin/';
+var build = '_dist/';
 
 module.exports = {
 
@@ -91,6 +91,11 @@ module.exports = {
 
   favicons: {
     src:  src + '/favicons/*',
+    dest: build
+  },
+
+  rootFiles: {
+    src:  src + '/root-files/*',
     dest: build
   },
 

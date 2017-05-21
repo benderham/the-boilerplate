@@ -1,3 +1,17 @@
 .visually-hidden {
   @extend %visually-hidden;
+
+  &.focusable {
+    &:active,
+    &:focus {
+      position: static;
+      width: auto;
+      height: auto;
+      margin: 0;
+      white-space: inherit;
+      overflow: visible;
+      clip: auto;
+      clip-path: none;
+    }
+  }
 }

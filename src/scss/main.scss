@@ -17,7 +17,7 @@
 // - Ground zero styles
 // - Low specificity, far reaching
 // - Resets, Normalize etc.
-@import '../../node_modules/normalize.css/normalize.css'; // -- https://necolas.github.io/normalize.css/
+@import '../../node_modules/normalize.css/normalize'; // -- https://necolas.github.io/normalize.css/
 
 // Base
 // - Unclassed HTML elements
@@ -39,6 +39,7 @@
 // - Designed pieces of UI
 // - Still only using classes
 // - More explicity named e.g .products-list
+@import 'components.browser-message';
 @import 'components.buttons';
 
 // Trumps
@@ -46,3 +47,4 @@
 // - Only affect one piece of the DOM at a time
 // - Usually carry !important
 @import 'trumps.helpers';
+@import 'trumps.print';

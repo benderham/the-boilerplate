@@ -1,50 +1,50 @@
 @mixin background-opacity($color, $opacity: 0.3) {
-  background: $color; /* The Fallback */
-  background: rgba($color, $opacity);
+  background: $color; // The Fallback
+  background: rgba($color, $opacity); // sass-lint:disable-line no-duplicate-properties
 }
 
-/**
- * SVG background images with PNG and retina fallback
- */
+// SVG background images with PNG and retina fallback
 $image-path: '../images' !default;
 $fallback-extension: 'png' !default;
 $retina-suffix: '@2x';
-@mixin background-image($name, $size:false){
-  background-image: url(#{$image-path}/#{$name}.svg);
-  @if($size){
+
+@mixin background-image($name, $size: false) {
+  background-image: url('#{$image-path}/#{$name}.svg');
+  @if($size) {
     background-size: $size;
   }
-  .no-svg &{
-    background-image: url(#{$image-path}/#{$name}.#{$fallback-extension});
 
-    @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-      background-image: url(#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension});
+  .no-svg & {
+    background-image: url('#{$image-path}/#{$name}.#{$fallback-extension}');
+
+    @media only screen and (min-device-pixel-ratio: 2),
+      only screen and (min-resolution: 192dpi),
+      only screen and (min-resolution: 2dppx) {
+        background-image: url('#{$image-path}/#{$name}#{$retina-suffix}.#{$fallback-extension}');
     }
   }
 }
 
-/**
- * REM font size with px fallback.
- */
+// REM font size with px fallback.
 @function calculateRem($size) {
-  $remSize: $size / 16px;
+  $remSize: $size / $base-font-size;
   @return $remSize * 1rem;
 }
 
 @mixin font-size($size) {
   font-size: $size;
-  font-size: calculateRem($size);
+  font-size: calculateRem($size); // sass-lint:disable-line no-duplicate-properties
 }
 
-/**
- * Box Shadows
- */
+// Box Shadows
 @mixin box-shadow($level) {
   @if ($level == 2) {
-    box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.32);
-  } @else if ($level == 1) {
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.16);
-  } @else {
+    box-shadow: 3px 3px 10px 0 rgba($black, 0.32);
+  }
+  @else if ($level == 1) {
+    box-shadow: 1px 1px 5px 0 rgba($black, 0.16);
+  }
+  @else {
     box-shadow: none;
   }
 }

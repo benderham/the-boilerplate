@@ -1,15 +1,16 @@
-$primary-color: #CC208E;
-$accent-color: #6713D2;
+$primary-color: #cc208e;
+$accent-color: #6713d2;
 
-$grey-dark: #333333;
-$grey: #CCCCCC;
-$grey-light: #FEFEFE; 
+$grey-dark: #333;
+$grey: #ccc;
+$grey-light: #fefefe;
 
-$white: #FFFFFF;
-$black: #000000;
+$white: #fff;
+$black: #000;
 
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700'); // sass-lint:disable-line no-url-domains no-url-protocols
 $default-font: 'Lato', sans-serif;
+$base-font-size: 16px;
 
 $light-font: 300;
 $normal-font: 400;

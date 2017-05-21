@@ -1,18 +1,7 @@
-%clear-fix {
-  *zoom: 1;
-  &:before, &:after {
-    content: " ";
-    display: table;
-  }
-  &:after {
-    clear: both;
-  }
-}
-
 %hide-text {
-  overflow: hidden;
   text-indent: 150%;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 %horz-align {
@@ -21,8 +10,8 @@
 }
 
 %reset-list {
-  padding: 0;
   margin: 0;
+  padding: 0;
   list-style: none;
   list-style-image: none;
 }
@@ -33,12 +22,13 @@
 }
 
 %visually-hidden {
-  margin: -1px;
-  padding: 0;
+  position: absolute;
   width: 1px;
   height: 1px;
+  margin: -1px;
+  padding: 0;
+  white-space: nowrap;
   overflow: hidden;
   clip: rect(0 0 0 0);
-  clip: rect(0, 0, 0, 0);
-  position: absolute;
+  clip-path: inset(50%);
 }

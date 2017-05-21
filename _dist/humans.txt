@@ -1,0 +1,14 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+  Developer: Ben Derham
+  Website: benderham.com
+  Twitter: @benderham88
+
+# SITE
+
+  Standards: HTML5, CSS3, JavaScript
+  Components: Normalize.css, Modernizr
+  Software: Visual Studio Code
