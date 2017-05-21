@@ -1,10 +1,10 @@
 .layout {
   display: flex;
   flex-flow: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
-  @include media(">=medium") {
+  @include media('>=medium') {
     flex-flow: row wrap;
     align-items: flex-start;
   }
@@ -15,7 +15,7 @@
   width: 100%;
 }
 
-.layout__item--half {
+.layout-item__item--half {
   @include media(">=medium") {
     flex: 0 0 50%;
   }
@@ -34,7 +34,7 @@
 }
 
 .layout__item--fifth {
-  @include media(">=medium") {
+  @include media('>=medium') {
     flex: 0 0 20%;
   }
 }

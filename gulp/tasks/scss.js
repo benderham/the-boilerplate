@@ -1,12 +1,18 @@
 var gulp = require('gulp');
 var plumber = require('gulp-plumber');
 var scss = require('gulp-sass');
+var sassLint = require('gulp-sass-lint');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var config = require('../config');
 
 gulp.task('scss', function(){
   return gulp.src(config.scss.src)
+    .pipe(sassLint({
+      configFile: '.sass-lint.yml'
+    }))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
     .pipe(plumber({
       errorHandler: function (err) {
         console.log(err);

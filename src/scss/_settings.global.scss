@@ -1,5 +1,12 @@
-$main-color: #ffffff;
-$secondary-color: #000000;
+$primary-color: #CC208E;
+$accent-color: #6713D2;
+
+$grey-dark: #333333;
+$grey: #CCCCCC;
+$grey-light: #FEFEFE; 
+
+$white: #FFFFFF;
+$black: #000000;
 
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 $default-font: 'Lato', sans-serif;
@@ -8,10 +15,24 @@ $light-font: 300;
 $normal-font: 400;
 $bold-font: 700;
 
-$spacing-unit--x-small: 20px;
-$spacing-unit--small: 55px;
-$spacing-unit--medium: 80px;
-$spacing-unit--large: 140px;
-$spacing-unit--x-large: 240px;
+$spacing-unit--xs: 10px;
+$spacing-unit--s: 20px;
+$spacing-unit--m: 30px;
+$spacing-unit--l: 40px;
+$spacing-unit--xl: 50px;
 
-$breakpoints: (small: 320px, medium: 768px, large: 960px, x-large: 1280px);
+// https://material.io/guidelines/layout/responsive-ui.html#responsive-ui-breakpoints
+$breakpoints: (
+  xs-360: 360px,
+  xs-400: 400px,
+  xs-480: 480px,
+  s-600: 600px,
+  s-720: 720px,
+  s-840: 840px,
+  s-960: 960px,
+  m-1024: 1024px,
+  m-1280: 1280px,
+  l-1440: 1440px,
+  l-1600: 1600px,
+  xl-1920: 1920px
+);

@@ -8,8 +8,8 @@
 // - Globally available tools
 // - Public mixins
 // - Helper functions
-@import '../../node_modules/include-media/dist/_include-media.scss'; // -- http://include-media.com/
-@import '../../node_modules/@material/layout-grid/mdc-layout-grid.scss'; // -- https://material.io/components/web/catalog/layout-grids/
+@import '../../node_modules/include-media/dist/include-media'; // -- http://include-media.com/
+@import '../../node_modules/@material/layout-grid/mdc-layout-grid'; // -- https://material.io/components/web/catalog/layout-grids/
 @import 'tools.mixins';
 @import 'tools.placeholders';
 
@@ -17,7 +17,7 @@
 // - Ground zero styles
 // - Low specificity, far reaching
 // - Resets, Normalize etc.
-@import 'generic.normalize';
+@import '../../node_modules/normalize.css/normalize.css'; // -- https://necolas.github.io/normalize.css/
 
 // Base
 // - Unclassed HTML elements
